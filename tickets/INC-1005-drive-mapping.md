@@ -33,7 +33,7 @@ Added to `GG_Sales`; user signed out and in again.
 > Guten Tag Frau Schmidt, Frau Yılmaz fehlte die Berechtigung für das Vertriebslaufwerk. Wir haben sie ergänzt. Nach einer Ab- und Anmeldung ist Laufwerk S: jetzt verfügbar. Herzlich willkommen an Frau Yılmaz!
 
 ## Prevention / follow-up
-- Improvement for `New-UserOnboarding.ps1`: validate the `Department` column against the list of OUs **before** creating anything (issue #1 in project 03).
+- Improvement for `New-UserOnboarding.ps1`: validate the `Department` column against the list of OUs **before** creating anything → **implemented** as `Test-NLNewHireRow` in [project 03](https://github.com/BigDougCed/03-powershell-ad-automation) (the whole CSV is checked first; nothing is created if one row is wrong).
 - KB: "Why do I have to sign out after getting new permissions?"
 
 ## Lab reproduction
